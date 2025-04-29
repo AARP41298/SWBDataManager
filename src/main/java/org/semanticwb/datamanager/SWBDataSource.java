@@ -173,7 +173,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObjectIterator find(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObjectIterator find(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return find(DataUtils.toDataObject(json));
     }  
@@ -211,7 +211,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject mapByNumId(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject mapByNumId(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return mapByNumId(DataUtils.toDataObject(json));
     } 
@@ -243,7 +243,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject mapById(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject mapById(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return mapByField(DataUtils.toDataObject(json),"_id");
     }     
@@ -284,7 +284,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject mapByField(jdk.nashorn.api.scripting.ScriptObjectMirror json, String field) throws IOException
+    public DataObject mapByField(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json, String field) throws IOException
     {        
         return mapByField(DataUtils.toDataObject(json),field);
     }     
@@ -317,7 +317,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject fetch(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject fetch(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return fetch(DataUtils.toDataObject(json));
     }
@@ -349,7 +349,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject aggregate(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject aggregate(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return aggregate(DataUtils.toDataObject(json));
     }    
@@ -375,7 +375,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject addObj(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject addObj(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return addObj(DataUtils.toDataObject(json));
     }
@@ -401,7 +401,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject updateObj(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject updateObj(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return updateObj(DataUtils.toDataObject(json));
     }
@@ -427,7 +427,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject removeObj(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject removeObj(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return removeObj(DataUtils.toDataObject(json));
     }    
@@ -644,7 +644,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject update(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject update(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return update(DataUtils.toDataObject(json));
     }
@@ -682,7 +682,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject add(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject add(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return add(DataUtils.toDataObject(json));
     }
@@ -837,7 +837,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject remove(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject remove(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return remove(DataUtils.toDataObject(json));
     }
@@ -949,7 +949,7 @@ public class SWBDataSource
      * @return
      * @throws IOException
      */
-    public DataObject validate(jdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
+    public DataObject validate(org.openjdk.nashorn.api.scripting.ScriptObjectMirror json) throws IOException
     {        
         return validate(DataUtils.toDataObject(json));
     }

@@ -19,7 +19,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.TimeZone;
-import jdk.nashorn.api.scripting.ScriptObjectMirror;
+import org.openjdk.nashorn.api.scripting.ScriptObjectMirror;
 import org.semanticwb.datamanager.script.ScriptObject;
 import org.semanticwb.datamanager.utils.SimpleDateFormatTS;
 
@@ -231,10 +231,10 @@ public class DataUtils {
      */
     public static Object toData(Object obj)
     {
-        if(obj instanceof jdk.nashorn.internal.objects.NativeArray)
+        if(obj instanceof org.openjdk.nashorn.internal.objects.NativeArray)
         {
             //System.out.print(value);
-            jdk.nashorn.internal.objects.NativeArray narr=(jdk.nashorn.internal.objects.NativeArray)obj;
+            org.openjdk.nashorn.internal.objects.NativeArray narr=(org.openjdk.nashorn.internal.objects.NativeArray)obj;
             Object arr[]=narr.asObjectArray();
             DataList list=new DataList();
             for(int x=0;x<arr.length;x++)

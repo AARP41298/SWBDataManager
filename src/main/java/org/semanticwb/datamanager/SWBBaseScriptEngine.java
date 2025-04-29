@@ -581,7 +581,7 @@ public class SWBBaseScriptEngine implements SWBScriptEngine
                         {
                             obj=(DataObject)r.getValue();
                         }
-                    }catch(jdk.nashorn.internal.runtime.ECMAException ecma)
+                    }catch(org.openjdk.nashorn.internal.runtime.ECMAException ecma)
                     {
                         throw ecma;
                     }catch(Throwable e)

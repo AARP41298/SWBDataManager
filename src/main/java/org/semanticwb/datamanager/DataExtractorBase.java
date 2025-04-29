@@ -7,7 +7,7 @@
 package org.semanticwb.datamanager;
 
 import java.io.IOException;
-import jdk.nashorn.api.scripting.ScriptObjectMirror;
+import org.openjdk.nashorn.api.scripting.ScriptObjectMirror;
 import org.semanticwb.datamanager.script.ScriptObject;
 
 /**
